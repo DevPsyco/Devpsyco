@@ -164,6 +164,9 @@
     margin-bottom: 30%;
   }
 
+  .titulo-quienes {
+    margin-top: 15%;
+  }
 }
 
 @media (max-width: 375px) {
