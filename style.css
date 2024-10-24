@@ -8,15 +8,18 @@
   --fondo: #18181b;
   z-index: 10;
 }
+
 html {
   height: fit-content;
 }
+
 body {
   all: unset;
   font-family: "Poppins", system-ui;
   color: white;
   height: fit-content;
 }
+
 .barra {
   grid-area: nav-bar;
   display: grid;
@@ -36,6 +39,7 @@ body {
   -webkit-backdrop-filter: blur(17.5px);
   border-radius: 10px;
 }
+
 .logo-nav {
   display: grid;
   width: 100vw;
@@ -44,6 +48,7 @@ body {
   grid-template-rows: 1fr;
   color: white;
 }
+
 .link-nav-logo-2 {
   text-decoration: none;
   width: fit-content;
@@ -52,12 +57,14 @@ body {
   cursor: pointer;
   z-index: 10000;
 }
+
 .link-nav-logo {
   width: fit-content;
   display: block;
   align-self: center;
   display: grid;
 }
+
 .logo-nav p {
   margin: 0;
   justify-self: start;
@@ -65,10 +72,12 @@ body {
   color: white;
   text-align: center;
 }
+
 .logo-nav svg {
   align-self: center;
   justify-self: center;
 }
+
 .logo-barra {
   width: 35px;
   height: 35px;
@@ -80,16 +89,19 @@ body {
   animation-iteration-count: inherit;
   transition: 1s;
 }
+
 @keyframes aparicion {
   from {
     opacity: 0%;
     transform: scale(0.8);
   }
+
   to {
     opacity: 100%;
     transform: scale(1);
   }
 }
+
 .logo-barra:hover {
   transition: 1s;
   scale: 1.1;
@@ -107,6 +119,7 @@ body {
   color: var(--texto);
   height: 50px;
 }
+
 .ico {
   height: fit-content;
   display: flex;
@@ -115,19 +128,23 @@ body {
   margin: 0 20px 0 20px;
   text-align: center;
 }
+
 .iconos a {
   color: var(--secundario);
 }
+
 .iconos a:hover {
   color: var(--primario);
   transition: 0.5s;
 }
+
 .texto-nav {
   display: none;
   grid-column: 2/3;
   grid-row: 2/3;
   color: white;
 }
+
 .texto-nav a {
   text-decoration: none;
   color: var(--secundario);
@@ -135,9 +152,11 @@ body {
   font-size: 1.5cap;
   transition: 0.5s;
 }
+
 .texto-nav a:hover {
   color: var(--primario);
 }
+
 .equis {
   background-color: transparent;
   justify-self: center;
@@ -150,10 +169,12 @@ body {
   height: fit-content;
   padding: 0;
 }
+
 .equis svg {
   width: 25px;
   height: fit-content;
 }
+
 .active {
   width: 100%;
   height: 100vh;
@@ -163,6 +184,7 @@ body {
   grid-template-rows: 50px 1fr;
   background-color: var(--quinto);
 }
+
 .active .logo-nav {
   display: grid;
   width: 100vw;
@@ -171,61 +193,74 @@ body {
   grid-template-rows: 1fr;
   color: white;
 }
+
 .active .link-nav-logo {
   width: 100%;
   height: 100%;
 }
+
 .active .logo-barra {
   justify-self: center;
   align-self: center;
   margin: 0;
 }
+
 .active .equis {
   justify-self: center;
   align-self: center;
 }
+
 .active .iconos {
   display: none;
   animation: desaparicion 1s;
   transition: 0.5s;
 }
+
 @keyframes desaparicion {
   from {
     opacity: 100%;
     transform: scale(1);
   }
+
   to {
     opacity: 0%;
     transform: scale(0);
   }
 }
+
 .active .equis {
   display: block;
 }
+
 .active .logo-nav p {
   display: block;
   animation: aparicion 0.5s;
   color: white;
   justify-self: center;
 }
+
 .active .texto-nav {
   display: block;
   transition: 0.5s;
   animation: aparicion 0.5s;
 }
+
 .active .texto-nav a:hover {
   transition: all 0.5s;
   color: #cfcfcf;
   transform: translateX(10px);
 }
+
 @keyframes aparicion {
   from {
     opacity: 0%;
   }
+
   to {
     opacity: 100%;
   }
 }
+
 .hamburguesa {
   color: white;
   height: 50px;
@@ -234,6 +269,7 @@ body {
   cursor: pointer;
   display: none;
 }
+
 .hero {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-color: var(--quinto);
@@ -243,6 +279,7 @@ body {
   display: grid;
   z-index: 20;
 }
+
 .esferas {
   background: url(src/tarjeta.webp) no-repeat;
   z-index: 21;
@@ -252,6 +289,7 @@ body {
   position: absolute;
   filter: opacity(30%);
 }
+
 .presentacion {
   margin-top: 50px;
   justify-self: center;
@@ -267,6 +305,7 @@ body {
   z-index: 22;
   animation: aparicion 2.5s ease-in-out;
 }
+
 .presentacion h1 {
   font-size: 5vmax;
   font-size: 6vmin;
@@ -281,17 +320,21 @@ body {
   -webkit-text-fill-color: transparent;
   animation: fluido 10s ease-in-out infinite;
 }
+
 @keyframes fluido {
   0% {
     background-position: 0 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0 50%;
   }
 }
+
 .presentacion p {
   font-size: 1.5vmax;
   font-size: 3vmin;
@@ -299,6 +342,7 @@ body {
   grid-row: 2/3;
   margin: 0;
 }
+
 .botones_hero {
   background-image: linear-gradient(-50deg, #1374ac86, rgb(19 33 172 / 0%));
   text-decoration: none;
@@ -314,11 +358,14 @@ body {
   font-size: 1.4vmax;
   font-size: 2.5vmin;
   width: 60%;
+  display: grid;
 }
+
 .botones_hero:hover {
   background-image: linear-gradient(-45deg, #0e4e7486, rgb(19 33 172 / 0%));
   transition: all 0.5s;
 }
+
 .botones_hero span {
   background: linear-gradient(-45deg, #a7f5ff, #23a6d5, #0071a5);
   background-size: 300%;
@@ -326,10 +373,13 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fluido 5s ease-in-out infinite;
+  place-self: center;
 }
+
 .boton-hero-1 {
   justify-self: end;
 }
+
 .boton-accion {
   text-decoration: none;
   color: white;
@@ -341,6 +391,7 @@ body {
   align-self: center;
   padding-top: 10%;
 }
+
 .boton-accion-1 {
   background: linear-gradient(95deg, #9a13ac, #2537ff, #13ac93);
   height: 30px;
@@ -354,9 +405,11 @@ body {
   transform: translateX(15px);
   transition: all 0.5s ease-in;
 }
+
 .boton-accion-1:hover {
   scale: 1.01;
 }
+
 .boton-accion-2 {
   background-color: var(--cuarto);
   height: 30px;
@@ -369,16 +422,20 @@ body {
   align-items: center;
   transform: translateX(-15px);
 }
+
 .boton-accion-1,
 .boton-accion-2 span {
   font-size: 2.5vmin;
 }
+
 .span-1-ac {
   margin-left: 20px;
 }
+
 .span-1-ac:hover {
   text-decoration: underline;
 }
+
 .que-es {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-size: cover;
@@ -387,12 +444,14 @@ body {
   display: grid;
   grid-template-rows: auto auto;
 }
+
 .que-es-div {
   margin-left: 50px;
   margin-right: 50px;
   text-wrap: balance;
   animation: aparicion 2.5s ease-in-out;
 }
+
 .que-es-div p {
   background: linear-gradient(-45deg, #23a6d5, #0071a5);
   background-size: 300%;
@@ -403,11 +462,13 @@ body {
   font-size: 1.3vmax;
   font-size: 4vmin;
 }
+
 .que-es-div h2 {
   font-size: 1.8vmax;
   font-size: 3vmin;
   font-weight: 400;
 }
+
 .items {
   margin-left: 50px;
   margin-right: 50px;
@@ -418,6 +479,7 @@ body {
   margin-bottom: 5%;
   animation: aparicion 2.5s ease-in-out;
 }
+
 .circulos {
   width: 12vmin;
   height: 12vmin;
@@ -428,35 +490,43 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .circulos span {
   font-size: 2.5vmax;
   font-size: 5.5vmin;
 }
+
 .circulos svg {
   width: 5vmin;
   height: auto;
 }
+
 .contenedor-item {
   text-wrap: balance;
 }
+
 .contenedor-item p {
   margin: 0;
   text-align: start;
   font-size: 1.3vmax;
   font-size: 3vmin;
 }
+
 .contenedor-item-1 .circulos {
   background-image: linear-gradient(-45deg, #1320ac86, rgb(19 33 172 / 0%));
   border: solid 4px #2538ff50;
 }
+
 .contenedor-item-2 .circulos {
   background-image: linear-gradient(-45deg, #9a13ac86, rgb(19 33 172 / 0%));
   border: solid 4px #9a13aca1;
 }
+
 .contenedor-item-3 .circulos {
   background-image: linear-gradient(-45deg, #13ac9386, rgb(19 33 172 / 0%));
   border: solid 4px #13ac9386;
 }
+
 .beneficios {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-size: cover;
@@ -465,6 +535,7 @@ body {
   display: grid;
   z-index: 19;
 }
+
 .contenedor-tabla {
   margin: 50px;
   height: fit-content;
@@ -473,12 +544,14 @@ body {
   background-color: var(--fondo);
   z-index: 22;
 }
+
 .promo {
   margin-left: 50px;
   margin-right: 50px;
   text-wrap: balance;
   z-index: 22;
 }
+
 .titulo-ref {
   background: linear-gradient(-45deg, #23a6d5, #0071a5);
   background-size: 300%;
@@ -489,25 +562,30 @@ body {
   font-size: 1.3vmax;
   font-size: 4vmin;
 }
+
 .respuesta {
   font-size: 3vmin;
 }
+
 .comparativa {
   font-size: 3vmin;
   margin-left: 50px;
   margin-right: 50px;
   color: #0071a5;
 }
+
 .tabla-porcentual {
   display: grid;
   padding-bottom: 40px;
 }
+
 .devpsico,
 .agencias,
 .personalizado {
   display: flex;
   align-items: center;
 }
+
 .contenedor-barra {
   border-radius: 10px;
   border: solid 1px white;
@@ -520,10 +598,12 @@ body {
   justify-content: start;
   align-items: center;
 }
+
 .contenedor-barra p {
   width: fit-content;
   margin: 0;
 }
+
 .barra-por1 {
   height: 85%;
   width: calc(92%);
@@ -531,28 +611,35 @@ body {
   border-radius: 10px;
   background: linear-gradient(-90deg, #31bff3, #4326e6);
 }
+
 .contenedor-tabla:hover .barra-por1 {
   animation: crecimiento 5s ease;
 }
+
 .contenedor-tabla:hover .numeros-dev {
   animation: aparece 6s ease;
 }
+
 @keyframes aparece {
   0% {
     opacity: 0%;
   }
+
   100% {
     opacity: 100%;
   }
 }
+
 @keyframes crecimiento {
   0% {
     width: 0%;
   }
+
   100% {
     width: calc(92%);
   }
 }
+
 .barra-por2 {
   height: 85%;
   width: calc(70%);
@@ -560,6 +647,7 @@ body {
   border-radius: 10px;
   background-color: var(--cuarto);
 }
+
 .barra-por3 {
   height: 85%;
   width: calc(60%);
@@ -567,17 +655,20 @@ body {
   border-radius: 10px;
   background-color: var(--cuarto);
 }
+
 .p-porciento {
   width: 150px;
   margin-left: 80px;
   font-size: 2.5vmin;
 }
+
 .numeros {
   font-size: 3vmin;
   font-weight: 600;
   color: var(--cuarto);
   padding-left: 10px;
 }
+
 .numeros-dev {
   background: linear-gradient(-45deg, #31bff3, #0071a5);
   background-size: 300%;
@@ -585,6 +676,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .web-vista {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-size: cover;
@@ -595,6 +687,7 @@ body {
   z-index: 19;
   padding-bottom: 200px;
 }
+
 .imagen-web {
   width: calc(50%);
   align-self: center;
@@ -603,20 +696,24 @@ body {
   transition: all 0.5 ease-in-out;
   z-index: 22;
 }
+
 .imagen-web:hover {
   scale: 1.03;
   transition: all 0.5;
 }
+
 .imegen-web-iphone {
   justify-self: center;
   display: none;
   z-index: 22;
 }
+
 .plantilla-contenedor-texto {
   margin-left: 50px;
   margin-right: 50px;
   z-index: 22;
 }
+
 .titulo-plantilla {
   background: linear-gradient(-45deg, #23a6d5, #0071a5);
   background-size: 300%;
@@ -627,9 +724,11 @@ body {
   font-size: 1.3vmax;
   font-size: 4vmin;
 }
+
 .platilla-respuesta {
   font-size: 3vmin;
 }
+
 .demo {
   background-image: linear-gradient(-50deg, #1374ac86, rgb(19 33 172 / 0%));
   text-decoration: none;
@@ -647,12 +746,14 @@ body {
   justify-self: center;
   z-index: 22;
 }
+
 .demo:hover {
   background-image: linear-gradient(-45deg, #0e4e7486, rgb(19 33 172 / 0%));
   scale: 1.01;
   transition: all 0.5s;
   text-decoration: underline;
 }
+
 .fondo-colores {
   background: url(src/fondoxd.webp) no-repeat;
   z-index: 21;
@@ -662,6 +763,7 @@ body {
   position: absolute;
   filter: opacity(30%);
 }
+
 .footer {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-size: cover;
@@ -674,49 +776,61 @@ body {
   padding-top: 30px;
   row-gap: 30px;
 }
+
 .redes-sociales {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .redes-sociales-footer {
   color: white;
 }
+
 .redes-sociales-footer svg {
   width: 25px;
   height: auto;
 }
+
 .redes-sociales-footer svg:hover {
   color: #0071a5;
   transition: all 0.2s;
 }
+
 .redes-sociales-footer svg:hover {
   scale: 1.09;
 }
+
 .llamar-accion {
   text-align: center;
 }
+
 .llamar-accion a {
   text-decoration: none;
   color: white;
 }
+
 .llamar-accion a:hover {
   color: #0071a5;
 }
+
 .copy {
   grid-column: 1/3;
   justify-self: center;
   text-align: center;
   color: var(--terciario);
 }
+
 .copy a {
   color: var(--terciario);
   text-decoration: none;
 }
+
 .copy a:hover {
   color: var(--secundario);
 }
+
 .precio_bod {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-color: var(--quinto);
@@ -726,19 +840,23 @@ body {
   display: grid;
   z-index: 20;
 }
+
 .titulo_precio {
   justify-self: center;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 10px;
 }
+
 .titulo_precio h5 {
   font-size: 4vmin;
   margin: 0;
 }
+
 .titulo_precio p {
   font-size: 3vmin;
 }
+
 .tarjetas_precios {
   margin-top: 5%;
   display: grid;
@@ -747,6 +865,7 @@ body {
   margin-bottom: 10%;
   animation: aparicion 2.5s ease-in-out;
 }
+
 .tarjeta {
   display: grid;
   border: solid #23a6d5 2px;
@@ -755,45 +874,56 @@ body {
   justify-self: center;
   height: 450px;
 }
+
 .tarjeta_1 {
   background: url(src/fondo_3.webp) no-repeat;
   background-size: contain;
 }
+
 .tarjeta_2 {
   background: url(src/tarjeta.webp) no-repeat;
   background-size: contain;
 }
+
 .tarjeta_3 {
   background: url(src/fondoxd.webp) no-repeat;
   background-size: contain;
 }
+
 .tarjeta:hover {
   animation: escala 10s infinite ease-in-out;
 }
+
 @keyframes escala {
   0% {
     background-size: 100%;
   }
+
   50% {
     background-size: 200%;
   }
+
   100% {
     background-size: 100%;
   }
 }
+
 .tarjeta_2:hover .tarjeta_2 a {
   background-color: #23a6d5;
 }
+
 .tarjeta h6 {
   font-size: 6vmin;
   margin: 0;
   text-align: center;
   z-index: 2;
 }
+
 .tarjeta p {
   font-size: 2.5vmin;
   text-align: center;
 }
+
 .button {
   color: white;
   text-decoration: none;
@@ -809,19 +939,24 @@ body {
   display: flex;
   font-size: 2.3vmin;
 }
+
 .tarjeta_2 a {
   background-color: #23a6d5;
 }
+
 .tarjeta_2 a:hover {
   background-color: #1d88af;
 }
+
 .tarjeta_1 a:hover {
   background-color: var(--cuarto);
 }
+
 .tarjeta_3 a:hover {
   background-color: var(--cuarto);
 }
-.quienes-somos{
+
+.quienes-somos {
   background: url(src/fondo-neutro.webp) no-repeat;
   background-color: var(--quinto);
   background-size: cover;
@@ -830,7 +965,8 @@ body {
   display: grid;
   z-index: 20;
 }
-.titulo-quienes{
+
+.titulo-quienes {
   margin-top: 7%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -838,7 +974,8 @@ body {
   animation: aparicion 3s;
   z-index: 23;
 }
-.logo-navbar-about{
+
+.logo-navbar-about {
   justify-self: center;
   align-self: center;
   animation: aparicion 5s;
@@ -847,22 +984,26 @@ body {
   transition: all 1s ease-in-out;
   z-index: 23;
 }
-.logo-navbar-about:hover{
+
+.logo-navbar-about:hover {
   scale: 1.01;
   transition: all 1s ease-in-out;
 }
-.texto-prin-about{
+
+.texto-prin-about {
   margin-left: 50px;
   margin-right: 50px;
   text-align: justify;
   height: fit-content;
   align-self: center;
 }
-.texto-prin-about h5{
+
+.texto-prin-about h5 {
   font-size: 4vmin;
   margin-bottom: 10px;
 }
-.esferas-about{
+
+.esferas-about {
   background: url(src/fondo_3.webp) no-repeat;
   z-index: 21;
   width: 100%;
@@ -872,11 +1013,14 @@ body {
   position: absolute;
   filter: opacity(30%);
 }
-.mison{
+
+.mison {
   margin-top: 10%;
   margin-bottom: 20px;
 }
-.mison, .vision{
+
+.mison,
+.vision {
   text-align: center;
   border: solid 1px white;
   border-radius: 10px;
@@ -892,21 +1036,27 @@ body {
   padding-right: 20px;
   animation: aparicion 2.5s ease-in-out;
 }
-.mison:hover, .vision:hover{
+
+.mison:hover,
+.vision:hover {
   background-color: var(--cuarto);
   transition: all 1s ease-in-out;
 }
-.mison h5, .vision h5{
+
+.mison h5,
+.vision h5 {
   font-size: 3.5vmin;
   margin: 10px;
   align-self: center;
 }
-.mison p .vision p{
+
+.mison p .vision p {
   font-size: 3vmin;
   margin: 10px;
   align-self: center;
 }
-.vision{
+
+.vision {
   margin-bottom: 10%;
   margin-top: 20px;
 }
