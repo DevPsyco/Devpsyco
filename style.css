@@ -967,7 +967,7 @@ body {
 }
 
 .titulo-quienes {
-  margin-top: 7%;
+  margin-top: calc(7%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
