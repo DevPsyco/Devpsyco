@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://devpsyco.github.io/Devpsyco/sitemap-index.xml
