@@ -234,6 +234,7 @@ input:where([type=button]),
 input:where([type=reset]),
 input:where([type=submit]) {
     -webkit-appearance: button;
+    appearance: none;
     background-color: transparent;
     background-image: none
 }
@@ -257,6 +258,7 @@ progress {
 
 [type=search] {
     -webkit-appearance: textfield;
+    appearance: none;
     outline-offset: -2px
 }
 
@@ -344,7 +346,7 @@ iframe,
 embed,
 object {
     display: block;
-    vertical-align: middle
+    /*vertical-align: middle*/
 }
 
 img,
