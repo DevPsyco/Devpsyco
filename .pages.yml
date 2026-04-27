@@ -3,7 +3,7 @@ content:
   - name: about
     label: Pages
     type: collection
-    path: docs
+    path: about
     fields:
       - name: title
         type: string
